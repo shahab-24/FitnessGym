@@ -58,7 +58,7 @@ body {
  
 Font-weight: 400;
 Font-size: 14px;
-
+color: rgba(255, 255, 255, 0.5);
 Letter-spacing: 0.3px;
 text-Align: center;
 }
@@ -165,10 +165,49 @@ text-align: center;
 
 .habit_section{
   text-align: center;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 20px;
 }
 
 .habit_image{
   border-radius: 50% 50%;
+}
+
+.habit_items_container{
+
+ justify-content: center;
+  margin: 0 auto;
+}
+
+
+/* run extra mile styles */
+.run_extra_mile{
+
+  border: 2px red solid;
+  text-align: center;
+  gap: 30px;
+  backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+  margin: 0 auto;
+}
+.run_extra_text_content{
+  padding: 40px;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+}
+
+.run_extra_img_content{
+  padding: 40px;
+  text-align: center;
+}
+.run_extra_mile img{
+  max-width: 100%;
+  text-align: center;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 576px) {
@@ -191,4 +230,28 @@ text-align: center;
     padding: 10px 20px;
     gap: 30px;
   }
+.run_extra_mile{
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+/* margin: 30px 10px; */
+
+  }
+
+  .run_extra_mile img, .run_extra_text_content{
+    max-width: 80%;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  /* .run_extra_text_content{
+    padding: 40px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+  } */
+
+
 }
