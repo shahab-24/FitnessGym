@@ -250,6 +250,29 @@ body {
   left: 30px;
 }
 
+
+/* footer section */
+.footer_section{
+  background: rgba(255, 255, 255, 0.1);
+  
+}
+
+.footer_content{
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.fitness_footer{
+  text-align: left;
+}
+
+.get_started{
+  text-align: left;
+  line-height: 30px;
+}
+
 @media screen and (max-width: 576px) {
   .navbar {
     justify-content: space-between;
@@ -307,7 +330,7 @@ body {
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
     margin: 10px auto;
-    padding: 30px 40px;
+    padding: 40px 50px;
   }
   .team_img_container img {
     width: 100%;
@@ -315,8 +338,8 @@ body {
   }
   .team_img_container {
   
-    max-width: 400px;
-    height: 350px;
+    max-width: 420px;
+    height: auto;
   
     
   }
