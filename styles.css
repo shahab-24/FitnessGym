@@ -292,15 +292,43 @@ body {
     border-radius: 15px;
   }
 
+  .team_section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 20px auto;
+  }
+
   .team_container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
+    margin: 10px auto;
+    padding: 10px 10px;
   }
   .team_img_container img {
-    width: 70%;
+    width: 80%;
     height: 100%;
   }
+  .team_img_container {
+  
+    max-width: 280px;
+    height: 200px;
+  
+    
+  }
+  .img_caption {
+    
+    color: white;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+}
+
+.hide{
+  display: none;
 }
