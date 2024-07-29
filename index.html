@@ -24,7 +24,7 @@
             <li>About</li>
           </ul>
         </div>
-        <div class="bars primary_color">
+        <div id="bars" class="primary_color">
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
@@ -40,8 +40,8 @@
             transformation stories to help you get fit and stay fit!
           </p>
           <div class="display_flex">
-            <button class="btn_primary">Join Club Now</button>
-            <button style="background: none" class="btn_primary">
+            <button class="btn_primary club_btn">Join Club Now</button>
+            <button style="background: none" class="btn_primary club_btn">
               Download App
             </button>
           </div>
@@ -55,7 +55,14 @@
             </p>
           </div>
           <div class="tutorial">
-            <h2 class="primary_color" style="font-size: 2rem">300+</h2>
+            <h2 class="primary_color" style="font-size: 2rem"><span class="svg"><svg width="11.340210" height="13.094482" viewBox="0 0 11.3402 13.0945" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>
+                  Created with Pixso.
+              </desc>
+              <defs/>
+              <path id="Polygon 1" d="M11.34 6.54L0 0L0 13.09L11.34 6.54Z" fill="#FAFAF9" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+            </span>300+</h2>
             <p style="font-size: 0.8rem" class="description">video tutorial</p>
           </div>
         </div>
@@ -63,7 +70,7 @@
     </header>
     <main>
       <!-- change your habit section -->
-      <section class="habit_section container section_sub_title">
+      <section class="habit_section container section_sub_title hide">
         <h2>Change Your Habits</h2>
         <p style="margin-bottom: 50px" class="section_description">
           We believe fitness should be <br />
@@ -111,7 +118,7 @@
       </section>
 
       <!-- Run Extra mile section -->
-      <section class="display_flex run_extra_mile container">
+      <section class="display_flex run_extra_mile container hide">
         <div class="run_extra_text_content display_flex">
           <h2 class="section_sub_title">Run an Extra Mile Easily</h2>
           <p style="text-align: left" class="section_description">
@@ -127,67 +134,70 @@
       </section>
 
       <!-- BMI Calculator section -->
-      <section class="display_flex bmi_calculate_content team_section">
+      <section class="display_flex bmi_calculate_content team_section hide">
        
-        <h2 class="section_sub_title">BMI Calculator</h2>
-        <p class="section_description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+ <div class="bmi_calculator">
+  <h5 style="margin-top: 50px;" class="section_sub_title headline">BMI Calculator</h5>
+  <p class="section_description des">We believe fitness should be  accessible to everyone, <br> everywhere, regardless of income or access to a gym.</p>
+ </div>
        
-        <div class="container display_flex">
-          <div class="section_description">
-            <h5 class="section_sub_title">BMI Calculator Chart</h5>
+        <div class="container calculate_bmi display_flex">
+          <div class="section_description table_section">
+            <h5 style="margin-bottom: 20px;" class="section_sub_title headline">BMI Calculator Chart</h5>
             <table class="">
               <thead class="">
                 <tr class="input bmi_tr">
-                  <th>BMI</th>
-                  <th>Weight Status</th>
+                  <th class="input">BMI</th>
+                  <th class="input">Weight Status</th>
                 </tr>
               </thead>
-              <tr class="input bmi_tr">
-                <td>Below 18.5</td>
-                <td>Underweight</td>
+              <tr class="input bmi_tr table_row">
+                <td class="input">Below 18.5</td>
+                <td class="input">Underweight</td>
+              </tr>
+              <tr class="input bmi_tr table_row">
+                <td class="input">18.5 - 24.9</td>
+                <td class="input">Healthy</td>
+              </tr>
+              <tr class="input bmi_tr table_row">
+                <td class="input">25.0 - 29.9</td>
+                <td class="input">Overweight</td>
               </tr>
               <tr class="input bmi_tr">
-                <td>18.5 - 24.9</td>
-                <td>Healthy</td>
+                <td class="input">30.0 - and Above</td>
+                <td class="input">Obese</td>
               </tr>
-              <tr class="input bmi_tr">
-                <td>25.0 - 29.9</td>
-                <td>Overweight</td>
-              </tr>
-              <tr class="input bmi_tr">
-                <td class="">30.0 - and Above</td>
-                <td>Obese</td>
-              </tr>
-              <tbody>
-
-              </tbody>
+            
             </table>
           </div>
 
-          <div class="calculate_bmi">
-           <div class="calculate_bmi_content">
-            <h5 class="section_sub_title">Calculate your BMI</h5>
-            <p class="section_description">We believe fitness should be accessible to everyone, <br> everywhere, regardless of income or access to a gym.</p>
+          <div class="">
+           <div class="calculate_bmi_content table_section">
+            <h5 class="section_sub_title headline">Calculate your BMI</h5>
+            <p class="section_description des">We believe fitness should be <br> accessible to everyone, everywhere, regardless <br> of income or access to a gym.</p>
            </div>
-            <input class="input" type="text" placeholder="Height/cm">
-            <input class="input" type="text" placeholder="Weight/kg"> <br>
-            <input class="input" type="text" placeholder="Age"> 
-            <select class="input section_description" name="" id="" aria-placeholder="sex">
+           <div class="table_section">
+            <input class="input_item" type="text" placeholder="Height/cm">
+            <input class="input_item" type="text" placeholder="Weight/kg"> <br>
+            <input class="input_item" type="text" placeholder="Age"> 
+            <select class="input_item section_description" name="" id="" aria-placeholder="sex">
               <option value="">Sex</option>
             </select>
             <br>
-            <select class="activity input section_description" name="" id="" aria-placeholder="Select an activity factor">
+            <select class="activity des section_description" name="" id="" aria-placeholder="Select an activity factor">
               <option value="">Select an activity factor</option>
             </select> <br>
-            <button style="width: 180px; border: none;" class="btn_primary">Calculate</button>
+            <button  class="btn_primary calculate_btn">Calculate</button>
+
+           </div>
           </div>
         </div>
       </section>
 
       <!-- meet our team section -->
 
-      <section class="team_section display_flex container">
-        <h2 class="section_sub_title">Meet Our Team</h2>
+      <section class="team_section display_flex container hide">
+        <h2 class="section_sub_title meet">Meet Our Team</h2>
         <p style="margin-bottom: 50px" class="section_description">
           We believe fitness should be <br />
           accessible to everyone, everywhere, <br />
@@ -241,7 +251,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer_section">
+    <footer class="footer_section hide">
       <div class="footer_content container display_flex">
         <div class="fitness_footer">
           <h1 style="text-align: left; font-size: 3.5rem" class="title">
