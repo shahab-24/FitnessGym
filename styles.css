@@ -412,6 +412,11 @@ th {
   align-items: center;
 }
 
+.meet{
+    font-size: 3rem;
+  text-align: center;
+}
+
 
 
 
@@ -456,10 +461,10 @@ line-height: 22px;
 
  }
 .navbar {
-   width: 90%;
+   width: 100%;
    justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
+    margin: 30px auto;
     padding: 10px 20px;
   }
   .workout {
@@ -510,6 +515,7 @@ line-height: 22px;
     display: none;
   }
   .meet{
+    
     text-align: center;
   }
 
@@ -521,7 +527,6 @@ line-height: 22px;
   .title_container{
     flex-direction: column;
    align-items: flex-start;
-
    justify-content: center;
   }
 
@@ -647,11 +652,6 @@ line-height: 22px;
   
   }
 
- 
-  /* .bmi_tr{
-    width: 200px;
-    height: 40px;
-  } */
 
  
 .bmi_calculate_content {
