@@ -417,9 +417,9 @@ th {
   text-align: center;
 }
 
-.training_headline{
-  text-align: left;
-}
+ .training_headline{
+   text-align: left;
+} 
 
 .training_section{
   flex-direction: column;
@@ -435,32 +435,39 @@ th {
 
 }
 
+
 .grid{
   display: grid;
-  grid-template-columns:320px 500px 400px;
-  
+  grid-template-columns:25% 45% 30%;
+  margin-bottom: 0;
 }
-.excercise_content img{
+.exercise_content img{
   width: 100%;
   height: 100%;
-  border: 2px solid red;
   object-fit: cover;
 }
+
+
 .grid_2{
   display: grid;
-  grid-template-columns:500px 320px 400px;
+  grid-template-columns:45% 20% 35%;
   margin-top: 0;
   
 }
+.exercise_content1{
+  background: rgba(6, 255, 210, 0.5),url('./images/exercise2.png');
+}
+
+  
 
 .caption{
-  border: 1px solid blue;
+ 
   position: absolute;
   margin-top: -80px;
   margin-left: 20px;
   color: black;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .caption_2{
@@ -468,7 +475,7 @@ th {
   position: absolute;
   margin-top: -200px;
   margin-left: 20px;
-
+  
   font-weight: 600;
   font-size: 1.25rem;
 }
@@ -482,6 +489,73 @@ th {
   font-weight: 400;
   font-size: 1rem;
 
+} 
+
+.img_content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient{
+
+  position: absolute;
+width: 105%;
+height: 100%;
+left: -16px;
+top: 0;
+  background: rgba(6, 255, 210, 0.5);
+}
+
+.gradient1{
+  
+position: absolute;
+width: 100%;
+height: 100%;
+left: -0;
+top: -0;
+background: rgba(255, 0, 0, 0.3);
+}
+
+.gradient3{
+  
+position: absolute;
+width: 100%;
+height: 100%;
+left: -0;
+top: -0;
+background: rgba(0, 0, 0, 0.5);
+
+}
+
+.gradient4{
+
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: rgba(0, 0, 0, 0.5);
+}
+
+.gradient5{
+  
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: rgba(66, 255, 0, 0.3);
+}
+
+.gradient6{
+  
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: rgba(0, 71, 255, 0.3);
 }
 
 
