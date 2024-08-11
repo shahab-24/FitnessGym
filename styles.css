@@ -572,9 +572,13 @@ background: rgba(0, 71, 255, 0.3);
   }
   .grid, .grid_2{
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 15px;
+    margin: 0 40px;
   }
-  .img_3{
+
+  .training_headline{
+    margin: 15px 40px;
+  }
+  .img_3, .caption, .caption_2, .caption_3{
     display: none;
   }
 
@@ -873,10 +877,11 @@ line-height: 22px;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: 10px 20px;
 }
 .testimonial_image {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
 }
